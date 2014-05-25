@@ -1,0 +1,9 @@
+C:\Users\user\AppData\Local\Temporary Projects\Mediator\bin\Release\Mediator.exe
+C:\Users\user\AppData\Local\Temporary Projects\Mediator\bin\Release\Mediator.pdb
+C:\Users\user\AppData\Local\Temporary Projects\Mediator\obj\x86\Release\Mediator.Form1.resources
+C:\Users\user\AppData\Local\Temporary Projects\Mediator\obj\x86\Release\Mediator.Properties.Resources.resources
+C:\Users\user\AppData\Local\Temporary Projects\Mediator\obj\x86\Release\Mediator.csproj.GenerateResource.Cache
+C:\Users\user\AppData\Local\Temporary Projects\Mediator\obj\x86\Release\Mediator.exe
+C:\Users\user\AppData\Local\Temporary Projects\Mediator\obj\x86\Release\Mediator.pdb
+D:\Mediator\Mediator\Mediator\obj\x86\Release\Mediator.exe
+D:\Mediator\Mediator\Mediator\obj\x86\Release\Mediator.pdb
