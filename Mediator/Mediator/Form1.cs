@@ -98,30 +98,17 @@ namespace Mediator
 
         private void компаниюToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddCmpForm addCmp = new AddCmpForm();
-            addCmp.Owner = this;
-            addCmp.ShowDialog();
-            list_cmp.Add(new Company(nameCmp));
-            button1.PerformClick();
+
         }
 
         private void отделToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddDeprForm addDepr = new AddDeprForm();
-            addDepr.Owner = this;
-            addDepr.ShowDialog();
-            list_cmp[numbComp].CreateDepart(nameDepr);
-            button1.PerformClick();
+
         }
 
         private void сотрудникаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddEmplForm addEmpl = new AddEmplForm();
-            addEmpl.Owner = this;
-            addEmpl.ShowDialog();
-            list_cmp[numbComp].list_dep[numbDepr].CreateEmpl(nameEmpl, SnameEmpld);
-            list_cmp[numbComp].list_dep[numbDepr].list_empl[list_cmp.Count - 1].setServer(serv);
-            button1.PerformClick();
+
         }
 
         private void сообщениеToolStripMenuItem_Click(object sender, EventArgs e)
@@ -170,6 +157,57 @@ namespace Mediator
             //treeView1.
             // Message mes=new Message(currentUser,
         }
+
+        private void компаниюToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            AddCmpForm addCmp = new AddCmpForm();
+            addCmp.Owner = this;
+            addCmp.ShowDialog();
+            list_cmp.Add(new Company(nameCmp));
+            serv.AddCmp(list_cmp[list_cmp.Count - 1]);
+            button1.PerformClick();
+        }
+
+        private void отделToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            AddDeprForm addDepr = new AddDeprForm();
+            addDepr.Owner = this;
+            addDepr.ShowDialog();
+            list_cmp[numbComp].CreateDepart(nameDepr);
+            button1.PerformClick();
+        }
+
+        private void сотрудникаToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            AddEmplForm addEmpl = new AddEmplForm();
+            addEmpl.Owner = this;
+            addEmpl.ShowDialog();
+            list_cmp[numbComp].list_dep[numbDepr].CreateEmpl(nameEmpl, SnameEmpld);
+            list_cmp[numbComp].list_dep[numbDepr].list_empl[list_cmp[numbComp].list_dep[numbDepr].list_empl.Count - 1].setServer(serv);
+            button1.PerformClick();
+        }
+
+        private void сообщенияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void отправитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("dgfdgfd");
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void сообщенияToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+  
 
 
     }
