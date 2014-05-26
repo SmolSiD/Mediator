@@ -16,3 +16,4 @@ C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.exe
 C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.pdb
 C:\Mediator\Mediator\Mediator\bin\Debug\Mediator.exe
 C:\Mediator\Mediator\Mediator\bin\Debug\Mediator.pdb
+C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.AddCmpForm.resources

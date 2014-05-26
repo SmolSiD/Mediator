@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCmpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCmpForm.Designer.cs">
+      <DependentUpon>AddCmpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Company.cs" />
     <Compile Include="Departments.cs" />
     <Compile Include="Empl.cs" />
@@ -62,6 +68,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TextMessage.cs" />
+    <EmbeddedResource Include="AddCmpForm.resx">
+      <DependentUpon>AddCmpForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

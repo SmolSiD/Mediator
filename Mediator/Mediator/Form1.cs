@@ -12,6 +12,7 @@ namespace Mediator
     public partial class Form1 : Form
     {
        List<Company> list_cmp;
+       public string nameCmp;
         public Form1()
         {
             InitializeComponent();
@@ -45,6 +46,15 @@ namespace Mediator
                     }
                 }
             }
+        }
+
+        private void компаниюToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddCmpForm addCmp = new AddCmpForm();
+            addCmp.Owner = this;
+            addCmp.ShowDialog();
+            treeView1.Nodes.Clear();
+            list_cmp.Add(new Company(nameCmp));
         }
 
 
