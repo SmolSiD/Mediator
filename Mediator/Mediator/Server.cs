@@ -32,7 +32,7 @@ namespace Mediator
             {
                 foreach (Message mes in list_mes)
                 {
-                    SendMessage(mes);
+                    if (!mes.isFin) SendMessage(mes);
                 }
             }
         }
@@ -44,7 +44,7 @@ namespace Mediator
                 {
                     foreach (Empl emp in depr.list_empl)
                     {
-                        if (emp.isTarget(mes)) { emp.AddMessage(mes); list_mes.Remove(mes); break; }
+                        if (emp.isTarget(mes)) { emp.AddMessage(mes); mes.isFin = true; break; }
                     }
                 }
             }

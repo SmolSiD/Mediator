@@ -68,6 +68,12 @@
     <Compile Include="Departments.cs" />
     <Compile Include="Empl.cs" />
     <Compile Include="ContentsMes.cs" />
+    <Compile Include="ReadMsgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadMsgForm.Designer.cs">
+      <DependentUpon>ReadMsgForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SendMessageForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReadMsgForm.resx">
+      <DependentUpon>ReadMsgForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SendMessageForm.resx">
       <DependentUpon>SendMessageForm.cs</DependentUpon>
     </EmbeddedResource>

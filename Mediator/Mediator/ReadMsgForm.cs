@@ -11,9 +11,20 @@ namespace Mediator
 {
     public partial class ReadMsgForm : Form
     {
-        public ReadMsgForm()
+        List<string> list;
+        Form1 main;
+        public ReadMsgForm(List<string> list)
         {
             InitializeComponent();
+            this.list = list;
+        }
+
+        private void ReadMsgForm_Load(object sender, EventArgs e)
+        {
+            foreach (string line in list)
+            {
+                listBox1.Items.Add(line);
+            }
         }
     }
 }

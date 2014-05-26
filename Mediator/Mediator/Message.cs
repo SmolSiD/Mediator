@@ -11,6 +11,7 @@ namespace Mediator
         public Empl To;
         ContentsMes content;
         DateTime date;
+        public bool isFin = false;
         public Message(Empl From,Empl To,ContentsMes content)
         {
             this.From = From;
@@ -28,6 +29,10 @@ namespace Mediator
         {
             this.content = content;
 
+        }
+        public override string ToString()
+        {
+            return this.From.ToString() + "--" + this.To.ToString()+"--" + this.content.toString();
         }
     }
 }

@@ -40,5 +40,14 @@ namespace Mediator
         {
             return this.Sname+" "+this.Name;
         }
+        public List<string> getListMsg()
+        {
+            List<string> list_msg = new List<string>();
+            foreach (Message msg in list_mes)
+            {
+                list_msg.Add(msg.ToString());
+            }
+            return list_msg;
+        }
     }
 }

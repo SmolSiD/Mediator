@@ -204,7 +204,11 @@ namespace Mediator
 
         private void сообщенияToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            ReadMsgForm ReadMsg = new ReadMsgForm();
+            string path = treeView1.SelectedNode.FullPath;
+            string[] temp = path.Split('\\');
+            Empl source = getCompany(temp[0]).getDepr(temp[1]).getEmp(temp[2].Split(' ')[0], temp[2].Split(' ')[1]);
+            List<string> msgs = source.getListMsg();
+            ReadMsgForm ReadMsg = new ReadMsgForm(msgs);
             ReadMsg.Owner = this;
             ReadMsg.ShowDialog();
         }
