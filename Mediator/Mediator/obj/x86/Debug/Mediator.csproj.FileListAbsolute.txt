@@ -7,3 +7,12 @@ C:\Users\user\AppData\Local\Temporary Projects\Mediator\obj\x86\Debug\Mediator.e
 C:\Users\user\AppData\Local\Temporary Projects\Mediator\obj\x86\Debug\Mediator.pdb
 D:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.exe
 D:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.pdb
+C:\Mediator\Mediator\Mediator\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.Form1.resources
+C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.Properties.Resources.resources
+C:\Mediator\Mediator\Mediator\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Mediator\Mediator\Mediator\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.exe
+C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.pdb
+C:\Mediator\Mediator\Mediator\bin\Debug\Mediator.exe
+C:\Mediator\Mediator\Mediator\bin\Debug\Mediator.pdb

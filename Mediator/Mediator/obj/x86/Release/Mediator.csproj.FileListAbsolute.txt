@@ -7,3 +7,5 @@ C:\Users\user\AppData\Local\Temporary Projects\Mediator\obj\x86\Release\Mediator
 C:\Users\user\AppData\Local\Temporary Projects\Mediator\obj\x86\Release\Mediator.pdb
 D:\Mediator\Mediator\Mediator\obj\x86\Release\Mediator.exe
 D:\Mediator\Mediator\Mediator\obj\x86\Release\Mediator.pdb
+C:\Mediator\Mediator\Mediator\obj\x86\Release\Mediator.exe
+C:\Mediator\Mediator\Mediator\obj\x86\Release\Mediator.pdb

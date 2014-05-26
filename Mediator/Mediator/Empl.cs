@@ -37,5 +37,9 @@ namespace Mediator
         {
             serv.AddMessage(mes);
         }
+        public override string ToString()
+        {
+            return this.Sname+" "+this.Name;
+        }
     }
 }
