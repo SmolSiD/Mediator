@@ -204,7 +204,9 @@ namespace Mediator
 
         private void сообщенияToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-
+            ReadMsgForm ReadMsg = new ReadMsgForm();
+            ReadMsg.Owner = this;
+            ReadMsg.ShowDialog();
         }
 
   
