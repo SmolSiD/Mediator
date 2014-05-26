@@ -17,3 +17,14 @@ C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.pdb
 C:\Mediator\Mediator\Mediator\bin\Debug\Mediator.exe
 C:\Mediator\Mediator\Mediator\bin\Debug\Mediator.pdb
 C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.AddCmpForm.resources
+D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.exe
+D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.pdb
+D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.AddCmpForm.resources
+D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.AddDeprForm.resources
+D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.Form1.resources
+D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.Properties.Resources.resources
+D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.csproj.GenerateResource.Cache
+D:\Mediator2\Mediator\Mediator\Mediator\bin\Debug\Mediator.exe
+D:\Mediator2\Mediator\Mediator\Mediator\bin\Debug\Mediator.pdb
+D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.AddEmplForm.resources
+D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.SendMessageForm.resources

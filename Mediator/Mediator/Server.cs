@@ -5,16 +5,16 @@ using System.Text;
 
 namespace Mediator
 {
-    class Server
+    public class Server
     {
-        List<Empl> list;
+        List<Company> list;
         List<Message> list_mes;
         public Server()
         {
-            this.list = new List<Empl>();
+            this.list = new List<Company>();
             this.list_mes = new List<Message>();
         }
-        public void AddEmpl(Empl obj)
+        public void AddCmp(Company obj)
         {
             this.list.Add(obj);
         }
@@ -26,13 +26,29 @@ namespace Mediator
         {
             this.list_mes.Remove(mes);
         }
-
+        public void Tic()
+        {
+            if (list_mes.Count != 0)
+            {
+                foreach (Message mes in list_mes)
+                {
+                    SendMessage(mes);
+                }
+            }
+        }
         public void SendMessage(Message mes)
         {
-            foreach (Empl empl in list)
+            foreach (Company cmp in list)
             {
-                if (empl.isTarget(mes)) { empl.AddMessage(mes); break; }
+                foreach (Departments depr in cmp.list_dep)
+                {
+                    foreach (Empl emp in depr.list_empl)
+                    {
+                        if (emp.isTarget(mes)) { emp.AddMessage(mes); list_mes.Remove(mes); break; }
+                    }
+                }
             }
+
         }
     }
 }

@@ -5,18 +5,17 @@ using System.Text;
 
 namespace Mediator
 {
-    class Empl
+    public class Empl
     {
         string Name;
         string Sname;
         string post;
         List<Message> list_mes;
         Server serv; 
-        public Empl(string SName, string Name, string post)
+        public Empl(string SName, string Name)
         {
             this.Name = Name;
             this.Sname=SName;
-            this.post=post;
             this.list_mes = new List<Message>();
         }
         public void setServer(Server serv)

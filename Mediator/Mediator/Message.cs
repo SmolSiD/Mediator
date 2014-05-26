@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Mediator
 {
-    class Message
+   public class Message
     {
         public Empl From;
         public Empl To;
@@ -17,6 +17,17 @@ namespace Mediator
             this.To = To;
             this.content = content;
             this.date = DateTime.Now;
+        }
+        public Message(Empl From, Empl To)
+        {
+            this.From = From;
+            this.To = To;
+            this.date = DateTime.Now;
+        }
+        public void setContent(ContentsMes content)
+        {
+            this.content = content;
+
         }
     }
 }

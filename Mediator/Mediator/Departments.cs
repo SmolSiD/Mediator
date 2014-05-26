@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Mediator
 {
-    class Departments
+    public class Departments
     {
         Company parent;
         string name;
@@ -23,6 +23,18 @@ namespace Mediator
         public override string ToString()
         {
             return this.name;
+        }
+        public Empl getEmp(string SName, string Name)
+        {
+            foreach (Empl emp in list_empl)
+            {
+                if (emp.ToString().Equals(SName + " " + Name)) return emp;
+            }
+            return null;
+        }
+        public void CreateEmpl(string Name, string Sname)
+        {
+           list_empl.Add(new Empl(Sname,Name));
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Mediator
 {
-   abstract class ContentsMes
+   abstract public  class ContentsMes
     {
         string type;
         public abstract string toString();

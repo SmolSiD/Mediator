@@ -52,10 +52,28 @@
     <Compile Include="AddCmpForm.Designer.cs">
       <DependentUpon>AddCmpForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddDeprForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDeprForm.Designer.cs">
+      <DependentUpon>AddDeprForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmplForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmplForm.Designer.cs">
+      <DependentUpon>AddEmplForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Company.cs" />
     <Compile Include="Departments.cs" />
     <Compile Include="Empl.cs" />
     <Compile Include="ContentsMes.cs" />
+    <Compile Include="SendMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendMessageForm.Designer.cs">
+      <DependentUpon>SendMessageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Server.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -71,6 +89,12 @@
     <EmbeddedResource Include="AddCmpForm.resx">
       <DependentUpon>AddCmpForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddDeprForm.resx">
+      <DependentUpon>AddDeprForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmplForm.resx">
+      <DependentUpon>AddEmplForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +107,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SendMessageForm.resx">
+      <DependentUpon>SendMessageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
