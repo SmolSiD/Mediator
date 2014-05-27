@@ -11,7 +11,7 @@ namespace Mediator
         string Sname;
         string post;
         List<Message> list_mes;
-        Server serv; 
+        public Server serv; 
         public Empl(string SName, string Name)
         {
             this.Name = Name;

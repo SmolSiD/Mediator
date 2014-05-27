@@ -32,7 +32,7 @@ namespace Mediator
         }
         public override string ToString()
         {
-            return this.From.ToString() + "--" + this.To.ToString()+"--" + this.content.toString();
+            return this.content.toString();
         }
     }
 }

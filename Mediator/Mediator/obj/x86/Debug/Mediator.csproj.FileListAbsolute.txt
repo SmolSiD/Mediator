@@ -29,3 +29,5 @@ D:\Mediator2\Mediator\Mediator\Mediator\bin\Debug\Mediator.pdb
 D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.AddEmplForm.resources
 D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.SendMessageForm.resources
 D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.ReadMsgForm.resources
+D:\Mediator2\Mediator\Mediator\Mediator\bin\Debug\Mediator.exe.config
+D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.csprojResolveAssemblyReference.cache

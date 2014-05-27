@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Mediator
 {
@@ -21,24 +22,28 @@ namespace Mediator
        Empl currentUser;
        int currentIndUser;
        Server serv;
+       SqlConnection sql_connect;
+       DataTable tbEmpl;
+       DataTable tbMsg;
         public Form1()
         {
             InitializeComponent();
             list_cmp = new List<Company>();
-            serv = new Server();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
             Company my_comp=new Company("АналитПрибор");
             list_cmp.Add(my_comp);
-            serv.AddCmp(my_comp);
+            
             my_comp.CreateDepart("ОТСН");
             my_comp.CreateDepart("СЭО");
             my_comp.CreateDepart("КО-78");
             my_comp.list_dep[0].AddEmpl(new Empl("Сироткин", "Денис"));
           currentUser = my_comp.list_dep[0].list_empl[my_comp.list_dep[0].list_empl.Count - 1];
+          serv = new Server(currentUser);
+          serv.AddCmp(my_comp);
             my_comp.list_dep[0].AddEmpl(new Empl("Мялик", "Ярослав"));
             my_comp.list_dep[1].AddEmpl(new Empl("sdfds", "sdfsdf"));
             foreach (Company cmp in list_cmp)
@@ -51,6 +56,7 @@ namespace Mediator
                     }
                 }
             }
+            timer1.Enabled = true;
         }
 
         public List<string> getCompanyList()
@@ -94,6 +100,7 @@ namespace Mediator
                     }
                 }
             }
+           
         }
 
         private void компаниюToolStripMenuItem_Click(object sender, EventArgs e)
@@ -212,6 +219,12 @@ namespace Mediator
             ReadMsg.Owner = this;
             ReadMsg.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            currentUser.serv.RemoveRow(3);
+        }
+
 
   
 

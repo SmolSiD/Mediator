@@ -18,6 +18,17 @@ namespace Mediator
         {
             list_dep.Add(new Departments(name));
         }
+        public Empl getEmpl(string SName, String Name)
+        {
+            foreach (Departments depr in list_dep)
+            {
+                foreach (Empl emp in depr.list_empl)
+                {
+                    if (emp.ToString().Equals(SName + " " + Name)) return emp;
+                }
+            }
+            return null;
+        }
         public Departments getDepr(string name)
         {
             foreach (Departments depr in list_dep)

@@ -15,7 +15,7 @@ namespace Mediator
 
         public override string toString()
         {
-            return "Текстовое сообщение: " + this.text;
+            return  this.text;
         }
     }
 }
