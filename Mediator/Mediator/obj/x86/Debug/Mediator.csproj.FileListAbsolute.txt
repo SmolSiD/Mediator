@@ -29,3 +29,11 @@ D:\Mediator2\Mediator\Mediator\Mediator\bin\Debug\Mediator.pdb
 D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.AddEmplForm.resources
 D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.SendMessageForm.resources
 D:\Mediator2\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.ReadMsgForm.resources
+C:\Mediator\Mediator\Mediator\bin\Debug\Mediator.exe.config
+C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.AddDeprForm.resources
+C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.AddEmplForm.resources
+C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.ReadMsgForm.resources
+C:\Mediator\Mediator\Mediator\obj\x86\Debug\Mediator.SendMessageForm.resources
+C:\Mediator\Mediator\Mediator\bin\Debug\bd.sdf
+C:\Mediator\Mediator\Mediator\bin\Debug\Database1.mdf
+C:\Mediator\Mediator\Mediator\bin\Debug\Database1_log.ldf

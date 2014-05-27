@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.OleDb;
+using System.Data.SqlClient;
 
 namespace Mediator
 {
@@ -30,7 +32,7 @@ namespace Mediator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
             Company my_comp=new Company("АналитПрибор");
             list_cmp.Add(my_comp);
             serv.AddCmp(my_comp);
@@ -81,6 +83,27 @@ namespace Mediator
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            //SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=bd;Integrated Security=True");
+           // con.Open();
+            string sConnectionString;
+            sConnectionString =  @"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Mediator\Mediator\Mediator\Database1.mdf;Integrated Security=True;User Instance=True";
+            SqlConnection objConn
+                = new SqlConnection(sConnectionString);
+            objConn.Open();
+            Database1DataSet db = new Database1DataSet();
+            SqlDataAdapter adp = new SqlDataAdapter("SELECT * FROM Работники", objConn);
+            adp.Fill(db,"Работники");
+            DataTable tbl;
+            tbl = db.Tables["Работники"];
+            DataRow rows = tbl.NewRow();
+            rows[0] = 5;
+            rows[1] = "Новиков";
+            rows[2] = "Александр";
+            rows[3] = "АНАЛИТ";
+            rows[4] = "ОТСН";
+            tbl.Rows.Add(rows);
+            SqlCommandBuilder objCommandBuilder = new SqlCommandBuilder(adp);
+            adp.Update(db, "Работники");
             treeView1.Nodes.Clear();
             foreach (Company cmp in list_cmp)
             {
@@ -212,6 +235,8 @@ namespace Mediator
             ReadMsg.Owner = this;
             ReadMsg.ShowDialog();
         }
+
+
 
   
 
